@@ -5,12 +5,12 @@ package:
 source:
   git_url: https://github.com/CamDavidsonPilon/lifelines
   #git_tag: v0.3.3
- 
+
 requirements:
   build:
     - python
     # Need this to compile extensions with mingw. Not necessary for python3 if Visual Studio 2010 available.
-    - libpython
+    - libpython [win]
     # Needed for f2py
     - numpy
   run:
@@ -18,7 +18,7 @@ requirements:
     - numpy
     - scipy
     - matplotlib
-    - pandas 0.14*
+    - pandas
 
 test:
   imports:
