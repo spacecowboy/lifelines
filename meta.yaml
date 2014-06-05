@@ -1,0 +1,30 @@
+package:
+  name: lifelines
+  version: 0.3.3
+
+source:
+  git_url: https://github.com/CamDavidsonPilon/lifelines
+  #git_tag: v0.3.3
+ 
+requirements:
+  build:
+    - python
+    # Need this to compile extensions with mingw. Not necessary for python3 if Visual Studio 2010 available.
+    - libpython
+    # Needed for f2py
+    - numpy
+  run:
+    - python
+    - numpy
+    - scipy
+    - matplotlib
+    - pandas 0.14*
+
+test:
+  imports:
+    - lifelines
+    - lifelines.statistics
+    - lifelines._statistics
+about:
+  home: https://github.com/CamDavidsonPilon/lifelines
+  license: MIT
