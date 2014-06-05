@@ -3,6 +3,10 @@ python:
    - "2.7"
    - "3.3"
    - "3.4"
+env:
+  - PD=0.14
+  - PD=0.13.1
+  - PD=0.13
 before_install:
   - sudo apt-get update
   - sudo apt-get install gfortran gcc
@@ -25,7 +29,7 @@ install:
   - conda info -a
 
   # Should match requirements.txt
-  - conda create -n test-environment python=$TRAVIS_PYTHON_VERSION pip numpy scipy pandas matplotlib
+  - conda create -n test-environment python=$TRAVIS_PYTHON_VERSION pip numpy scipy pandas=$PD matplotlib
   - source activate test-environment
   # Build in place so we can run tests
   - python setup.py build_ext --inplace
