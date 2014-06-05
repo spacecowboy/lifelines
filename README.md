@@ -57,7 +57,7 @@ pass
 
 ### Install the Windows SDK
 
-The free Visual C++ 2010 Express compiler doesn not include 64-bit
+The free Visual C++ 2010 Express compiler does not include 64-bit
 support. That is what we need the SDK to provide. Google for
 "Microsoft Windows SDK for Windows 7 and .NET Framework 4" or
 [try this link](http://www.microsoft.com/en-us/download/details.aspx?id=8279).
