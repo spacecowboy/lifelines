@@ -39,7 +39,7 @@ Type the following commands:
     conda create -n py2.7 python=2.7 numpy pip mingw
 
 
-### Install the Windows SDK
+### Install the Windows SDK for Visual Studio 2010
 
 The free Visual C++ 2010 Express compiler does not include 64-bit
 support. That is what we need the SDK to provide. Google for
@@ -51,6 +51,13 @@ Framework 3_ is for Visual Studio 2008.
 
 Note: if you have C++ 2010 Redistributables installed, you might have
 to uninstall them first or this install might fail.
+
+
+### Install the Windows SDK for Visual Studio 2008
+
+Same story for Visual C++ 2008 Express which is used for Python2.7.
+Find "Microsoft Windows SDK for Windows 7 and .NET Framework 3.5"
+or [try this link](C:\Program Files (x86)\Microsoft Visual Studio 9.0\VC\bin\x86_amd64)
 
 ### Install Visual C++ 2010 Express
 
