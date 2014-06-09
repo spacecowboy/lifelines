@@ -36,24 +36,8 @@ Type the following commands:
 
     conda create -n py3.3 python=3.3 numpy pip mingw
 
-    conda create -n py2.7 python=2.7 numpy pip libpython
+    conda create -n py2.7 python=2.7 numpy pip mingw
 
-#### Tweak Numpy for Python2.7 64-bit
-
-Tweak Numpy for Python2.7 64-bit to be able to use the included ming
-compiler. Open
-_Users\YOURNAME\Anaconda-64\envs\py2.7\Lib\site-packages\numpy\distutils\fcompiler\gnu.py_
-in notepad. Search for
-
-```python
-raise NotImplementedError("Only MS compiler supported with gfortran on win64")
-```
-
-around line 333. Replace it with
-
-```python
-pass
-```
 
 ### Install the Windows SDK
 
@@ -76,6 +60,11 @@ possible to use a newer version** than 2010. Python3.4 is built with
 2010 and hence all extensions must be as well.
 
 Google for it, [or try this link](http://www.visualstudio.com/downloads/download-visual-studio-vs#DownloadFamilies_4)
+
+### Install Visual C++ 2008 Express
+
+For building Python2.7, 2008 version is required. Google for
+"Visual C++ 2008 Express" or [try this link](http://go.microsoft.com/?linkid=7729279)
 
 ### Install git
 
